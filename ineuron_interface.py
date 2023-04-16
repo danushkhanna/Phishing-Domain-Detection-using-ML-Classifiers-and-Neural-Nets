@@ -1,5 +1,6 @@
 import streamlit as st
 import pickle
+import pandas as pd
 import re
 import whois
 import tldextract
@@ -159,13 +160,17 @@ input_url = st.text_area("Put in your sus site link here: ")
 
 if input_url != "":
     features_url = url_to_features(input_url)
+    features_dataframe = pd.DataFrame(features_url)
+    features_dataframe[features_dataframe.isna()] = -1
+    features_dataframe = features_dataframe.astype(int)
+
     st.write("Okay!")
     st.cache_data.clear()
     prediction_str = ""
 
     try: 
         phishing_url_detector = get_model()
-        prediction = phishing_url_detector.predict_model(features_url)
+        prediction = phishing_url_detector.predict_model(features_dataframe)
         if prediction == [0]:
             prediction_str = 'Phishing Website. Do not click!'
         elif prediction == [1]:
