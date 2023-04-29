@@ -85,7 +85,6 @@ def get_features():
     with open('features.csv') as feat_file:
         for line in feat_file:
             features_list.append(line.rstrip())
-    print(features_list)
     return features_list
 
 def url_to_features(url):
