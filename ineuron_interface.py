@@ -79,18 +79,18 @@ def count_sign(param, sign):
             num += value.count(sign)
     return num
 
-@st.cache
+@st.cache_resource
 def get_features():
     features_list = []
     with open('features.csv') as feat_file:
         for line in feat_file:
             features_list.append(line.rstrip())
+    print(features_list)
     return features_list
 
 def url_to_features(url):
     features_list = get_features()
-    new_dataset = []
-    new_dataset.append({})
+    new_dataset = {}
 
     signs_dict = {"dot":".", 
             "hyphen":"-", 
@@ -117,7 +117,7 @@ def url_to_features(url):
         st.write("Invalid URL")
         return
 
-    new_dataset['url_length'] = len(url)
+    new_dataset['length_url'] = len(url)
     new_dataset['directory_length'] = len(directory)
     new_dataset['file_length'] = len(file)
     new_dataset['params_length'] = len(str(parameters.values()))
@@ -145,9 +145,10 @@ def url_to_features(url):
         if f'qty_{sign_name}_params' in features_list:
             new_dataset[f'qty_{sign_name}_params'] = count_sign(parameters, sign)
 
-        return new_dataset
+    reordered_dict = {k: new_dataset[k] for k in features_list}
+    return reordered_dict
 
-@st.cache
+@st.cache_resource
 def get_model():
     with open('phishing_url_detector.pkl', 'rb') as pickle_model:
         phishing_url_detector = pickle.load(pickle_model)
@@ -160,8 +161,8 @@ input_url = st.text_area("Put in your sus site link here: ")
 
 if input_url != "":
     features_url = url_to_features(input_url)
-    features_dataframe = pd.DataFrame(features_url)
-    features_dataframe[features_dataframe.isna()] = -1
+    features_dataframe = pd.DataFrame.from_dict([features_url])
+    features_dataframe = features_dataframe.fillna(-1)
     features_dataframe = features_dataframe.astype(int)
 
     st.write("Okay!")
@@ -170,10 +171,10 @@ if input_url != "":
 
     try: 
         phishing_url_detector = get_model()
-        prediction = phishing_url_detector.predict_model(features_dataframe)
-        if prediction == [0]:
+        prediction = phishing_url_detector.predict(features_dataframe)
+        if prediction == int(True):
             prediction_str = 'Phishing Website. Do not click!'
-        elif prediction == [1]:
+        elif prediction == int(False):
             prediction_str = 'Not Phishing Website, stay safe!'
         else:
             prediction_str = ''
