@@ -151,7 +151,6 @@ class ExtractFeatures:
             - qty_redirects: Number of redirects encountered.
             - qty_char_domain: Number of characters in the domain name.
         """
-
         features_list = ['length_url',
                             'domain_length',
                             'domain_in_ip',
@@ -190,7 +189,6 @@ class ExtractFeatures:
             get_domain_info(): Retrieves information about a domain.
             get_redirects(): Retrieves the number of redirects for a given URL.
         """
-
         features_list = self.get_features()
         new_dataset = {}
 
