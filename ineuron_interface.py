@@ -10,6 +10,7 @@ st.image(image, width=150)
 
 st.write("<div align='left'><span style='color:#FF5A5F; font-size: 15px;'>Amsterdam</span></div>", unsafe_allow_html=True)
 
+st.title("Phishing Website Detector")
 st.markdown(
     "<div style='display: flex; align-items: left;'>"
     "<h1 style='color:#484848; margin-right: -40px'>Visualization with</h1>"
@@ -42,7 +43,6 @@ def get_model():
         phishing_url_detector = pickle.load(pickle_model)
     return phishing_url_detector
 
-st.title("Phishing Website Detector")
 st.header("Are you sure your 'bank' sent that link?")
 
 # Takes in user input
