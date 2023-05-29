@@ -34,6 +34,7 @@ st.markdown("- This dataset can help researchers and practitioners easily build 
 st.markdown("- Finally, the provided datasets could also be used as a performance benchmark for developing state-of-the-art machine learning methods for the task of phishing websites classification.")
 
 # Define the table data
+table_name = 'Table 1. Dataset attributes based on URL.'
 data = {
     'Nr.': list(range(1, 21)),
     'Attribute': [
@@ -55,7 +56,7 @@ data = {
 
 # Create a DataFrame from the data
 df = pd.DataFrame(data)
-
+st.write(f'## {table_name}')
 # Display the table using st.table
 st.table(df)
 
