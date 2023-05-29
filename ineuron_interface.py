@@ -8,7 +8,7 @@ from PIL import Image
 image = Image.open('ineuron-logo1.png')
 st.image(image, width=150)
 
-st.title("Phishing Website Detector")
+st.title("Unmasking Phishing Websites with Machine Learning")
 
 image=Image.open('cybersecpic.jpeg')
 width=750
