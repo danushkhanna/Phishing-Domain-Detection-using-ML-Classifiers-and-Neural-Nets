@@ -8,8 +8,8 @@ from PIL import Image
 image = Image.open('ineuron-logo1.png')
 st.image(image, width=150)
 
-st.title("Unmasking Phishing Websites with Machine Learning")
-st.markdown("<span style='color: orange;'>Machine Learning</span>", unsafe_allow_html=True)
+st.title("Unmasking Phishing Websites with")
+st.title("<span style='color: orange;'>Machine Learning</span>", unsafe_allow_html=True)
 
 image=Image.open('cybersecpic.jpeg')
 width=750
