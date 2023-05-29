@@ -15,7 +15,10 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown("<h1 style='color:orange;'>Machine Learning</h1>")
+st.markdown("<div style='display: flex; align-items: center;'>"
+            "<h1 style='color:orange;'>Machine Learning</h1>"
+            "</div>",
+    unsafe_allow_html=True)
 
 image=Image.open('cybersecpic.jpeg')
 width=750
