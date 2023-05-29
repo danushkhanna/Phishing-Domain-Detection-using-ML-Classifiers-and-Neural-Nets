@@ -11,7 +11,7 @@ st.image(image, width=150)
 import streamlit as st
 
 st.markdown(
-    "<div style='display: flex; align-items: center; margin-bottom: -50px;'>"
+    "<div style='display: flex; align-items: center; margin-bottom: -55px;'>"
     "<h1 style='color:#003E7F; margin-right: 10px;'>Unmasking Phishing Websites:</h1>"
     "</div>"
     "<h1 style='color:orange; margin-left: 10px;'>A Machine Learning Approach</h1>"
