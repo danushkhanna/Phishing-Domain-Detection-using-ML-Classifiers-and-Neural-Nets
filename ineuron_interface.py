@@ -65,21 +65,21 @@ st.markdown('#### Table 2. Dataset attributes based on domain URL.')
 data = {
     'Nr.': list(range(1, 22)),
     'Attribute': [
-        'qty_dot_domain', 'qty_hyphen_domain', 'qty_underline_domain', 'qty_slash_domain', 'qty_questionmark_domain',
-        'qty_equal_domain', 'qty_at_domain', 'qty_and_domain', 'qty_exclamation_domain', 'qty_space_domain',
-        'qty_tilde_domain', 'qty_comma_domain', 'qty_plus_domain', 'qty_asterisk_domain', 'qty_hashtag_domain',
-        'qty_dollar_domain', 'qty_percent_domain', 'qty_vowels_domain', 'domain_length', 'domain_in_ip',
-        'server_client_domain'
+        'qty_dot_domain', 'qty_hyphen_domain', 'qty_underline_domain', 'qty_slash_domain',
+        'qty_questionmark_domain', 'qty_equal_domain', 'qty_at_domain', 'qty_and_domain',
+        'qty_exclamation_domain', 'qty_space_domain', 'qty_tilde_domain', 'qty_comma_domain',
+        'qty_plus_domain', 'qty_asterisk_domain', 'qty_hashtag_domain', 'qty_dollar_domain',
+        'qty_percent_domain', 'qty_vowels_domain', 'domain_length', 'domain_in_ip', 'server_client_domain'
     ],
     'Format': [
         'Number of "." signs', 'Number of "-" signs', 'Number of "_" signs', 'Number of "/" signs',
         'Number of "?" signs', 'Number of "=" signs', 'Number of "@" signs', 'Number of "&" signs',
         'Number of "!" signs', 'Number of " " signs', 'Number of "~" signs', 'Number of "," signs',
         'Number of "+" signs', 'Number of "*" signs', 'Number of "#" signs', 'Number of "$" signs',
-        'Number of "%" signs', 'Number of vowels', 'Number of domain characters', 'URL domain in IP address format',
-        '“server” or ”client” in domain'
+        'Number of "%" signs', 'Number of vowels', 'Number of domain characters',
+        'URL domain in IP address format', '"server" or "client" in domain'
     ],
-    'Description': ['Numeric'] * 19 + ['Boolean', 'Boolean'],
+    'Description': ['Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Boolean', 'Boolean'],
     'Values': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '[0, 1]', '[0, 1]']
 }
 
