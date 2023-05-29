@@ -173,18 +173,27 @@ st.table(df)
 st.markdown('- attributes based on the URL resolving data and external metrics presented in Table 6.')
 st.markdown('#### Table 6. Dataset attributes based on resolving URL and external services.')
 
-
-
-
-
-
-
-
-
-
-
+data = {
+    'Nr.': list(range(1, 17)),
+    'Attribute': [
+        'time_response', 'domain_spf', 'asn_ip', 'time_domain_activation', 'time_domain_expiration',
+        'qty_ip_resolved', 'qty_nameservers', 'qty_mx_servers', 'ttl_hostname', 'tls_ssl_certificate',
+        'qty_redirects', 'url_google_index', 'domain_google_index', 'url_shortened', 'phishing'
+    ],
+    'Format': [
+        'Domain lookup time response', 'Domain has SPF', 'ASN', 'Domain activation time (in days)',
+        'Domain expiration time (in days)', 'Number of resolved IPs', 'Number of resolved NS',
+        'Number of MX servers', 'Time-To-Live (TTL)', 'Has valid TLS/SSL certificate', 'Number of redirects',
+        'Is URL indexed on Google', 'Is domain indexed on Google', 'Is URL shortened',
+        'Is phishing website'
+    ],
+    'Description': ['Numeric', 'Boolean', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Boolean', 'Numeric', 'Boolean', 'Boolean', 'Boolean', 'Boolean'],
+    'Values': ['', '[0, 1]', '', '', '', '', '', '', '', '[0, 1]', '', '[0, 1]', '[0, 1]', '', '[0, 1]']
+}
 df = pd.DataFrame(data)
-st.table(df)   
+st.table(df)
+
+st.markdown("The first group is based on the values of the attributes on the whole URL string, while the values of the following four groups are based on the particular sub-strings, as presented in Figure 1. The last group attributes are based on the URL resolve metrics as well as on the external services such as Google search index.")
  
 
 
