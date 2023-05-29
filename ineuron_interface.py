@@ -34,7 +34,7 @@ st.markdown("- This dataset can help researchers and practitioners easily build 
 st.markdown("- Finally, the provided datasets could also be used as a performance benchmark for developing state-of-the-art machine learning methods for the task of phishing websites classification.")
 
 # Define the table data
-table_name = 'Table 1. Dataset attributes based on URL.'
+table_name = '#### Table 1. Dataset attributes based on URL.'
 data = {
     'Nr.': list(range(1, 21)),
     'Attribute': [
