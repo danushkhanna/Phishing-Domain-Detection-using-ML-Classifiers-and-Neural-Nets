@@ -8,8 +8,6 @@ from PIL import Image
 image = Image.open('ineuronlogo2.png')
 st.image(image, width=150)
 
-st.write("<div align='left'><span style='color:#FF5A5F; font-size: 15px;'>Amsterdam</span></div>", unsafe_allow_html=True)
-
 st.title("Phishing Website Detector")
 
 image=Image.open('cybersec_orange.png')
