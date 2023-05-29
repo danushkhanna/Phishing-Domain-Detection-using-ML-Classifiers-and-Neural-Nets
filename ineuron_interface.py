@@ -49,7 +49,7 @@ data = {
         'Number of "+" signs', 'Number of "*" signs', 'Number of "#" signs', 'Number of "$" signs',
         'Number of "%" signs', 'Top level domain character length', 'Number of characters', 'Is email present'
     ],
-    'Description': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+    'Description': ['Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Boolean'],
     'Values': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '[0, 1]']
 }
 
