@@ -83,12 +83,114 @@ data = {
     'Values': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '[0, 1]', '[0, 1]']
 }
 
-# Create a DataFrame from the data
-df = pd.DataFrame(data)
 
-# Display the table using st.table
+df = pd.DataFrame(data)
 st.table(df)
-   
+
+# TABLE 3   
+st.markdown('- attributes based on the URL directory properties presented in Table 3,')
+st.markdown('#### Table 3. Dataset attributes based on URL directory.')
+
+data = {
+    'Nr.': list(range(1, 19)),
+    'Attribute': [
+        'qty_dot_directory', 'qty_hyphen_directory', 'qty_underline_directory', 'qty_slash_directory',
+        'qty_questionmark_directory', 'qty_equal_directory', 'qty_at_directory', 'qty_and_directory',
+        'qty_exclamation_directory', 'qty_space_directory', 'qty_tilde_directory', 'qty_comma_directory',
+        'qty_plus_directory', 'qty_asterisk_directory', 'qty_hashtag_directory', 'qty_dollar_directory',
+        'qty_percent_directory', 'directory_length'
+    ],
+    'Format': [
+        'Number of "." signs', 'Number of "-" signs', 'Number of "_" signs', 'Number of "/" signs',
+        'Number of "?" signs', 'Number of "=" signs', 'Number of "@" signs', 'Number of "&" signs',
+        'Number of "!" signs', 'Number of " " signs', 'Number of "~" signs', 'Number of "," signs',
+        'Number of "+" signs', 'Number of "*" signs', 'Number of "#" signs', 'Number of "$" signs',
+        'Number of "%" signs', 'Number of directory characters'
+    ],
+    'Description': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+    'Values': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+}
+
+df = pd.DataFrame(data)
+st.table(df)
+    
+# TABLE 4  
+st.markdown('- attributes based on the URL file properties presented in Table 4,')
+st.markdown('#### Table 4. Dataset attributes based on URL file name.')
+
+data = {
+    'Nr.': list(range(1, 19)),
+    'Attribute': [
+        'qty_dot_file', 'qty_hyphen_file', 'qty_underline_file', 'qty_slash_file',
+        'qty_questionmark_file', 'qty_equal_file', 'qty_at_file', 'qty_and_file',
+        'qty_exclamation_file', 'qty_space_file', 'qty_tilde_file', 'qty_comma_file',
+        'qty_plus_file', 'qty_asterisk_file', 'qty_hashtag_file', 'qty_dollar_file',
+        'qty_percent_file', 'file_length'
+    ],
+    'Format': [
+        'Number of "." signs', 'Number of "-" signs', 'Number of "_" signs', 'Number of "/" signs',
+        'Number of "?" signs', 'Number of "=" signs', 'Number of "@" signs', 'Number of "&" signs',
+        'Number of "!" signs', 'Number of " " signs', 'Number of "~" signs', 'Number of "," signs',
+        'Number of "+" signs', 'Number of "*" signs', 'Number of "#" signs', 'Number of "$" signs',
+        'Number of "%" signs', 'Number of file name characters'
+    ],
+    'Description': ['Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric'],
+    'Values': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+}
+
+df = pd.DataFrame(data)
+st.table(df)
+
+# TABLE 5  
+st.markdown('- attributes based on the URL parameter properties presented in Table 5, and')
+st.markdown('#### Table 5. Dataset attributes based on URL parameters.')
+    
+data = {
+    'Nr.': list(range(1, 19)),
+    'Attribute': [
+        'qty_dot_file', 'qty_hyphen_file', 'qty_underline_file', 'qty_slash_file',
+        'qty_questionmark_file', 'qty_equal_file', 'qty_at_file', 'qty_and_file',
+        'qty_exclamation_file', 'qty_space_file', 'qty_tilde_file', 'qty_comma_file',
+        'qty_plus_file', 'qty_asterisk_file', 'qty_hashtag_file', 'qty_dollar_file',
+        'qty_percent_file', 'file_length'
+    ],
+    'Format': [
+        'Number of "." signs', 'Number of "-" signs', 'Number of "_" signs', 'Number of "/" signs',
+        'Number of "?" signs', 'Number of "=" signs', 'Number of "@" signs', 'Number of "&" signs',
+        'Number of "!" signs', 'Number of " " signs', 'Number of "~" signs', 'Number of "," signs',
+        'Number of "+" signs', 'Number of "*" signs', 'Number of "#" signs', 'Number of "$" signs',
+        'Number of "%" signs', 'Number of file name characters'
+    ],
+    'Description': ['Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Boolean', 'Numeric'],
+    'Values': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+}   
+
+df = pd.DataFrame(data)
+st.table(df)    
+
+
+# TABLE 6
+st.markdown('- attributes based on the URL resolving data and external metrics presented in Table 6.')
+st.markdown('#### Table 6. Dataset attributes based on resolving URL and external services.')
+
+
+
+
+
+
+
+
+
+
+
+df = pd.DataFrame(data)
+st.table(df)   
+ 
+
+
+
+
+
 @st.cache_resource
 def get_model():
     """
