@@ -5,7 +5,7 @@ from extract_features import ExtractFeatures
 from PIL import Image
 
 # Load the image
-image = Image.open('ineuron-logo1.png')
+image = Image.open('ineuronlogo2.png')
 st.image(image, width=150)
 
 st.write("<div align='left'><span style='color:#FF5A5F; font-size: 15px;'>Amsterdam</span></div>", unsafe_allow_html=True)
