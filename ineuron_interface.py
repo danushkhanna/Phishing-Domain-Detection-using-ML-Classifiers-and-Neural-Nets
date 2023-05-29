@@ -193,7 +193,7 @@ data = {
 df = pd.DataFrame(data)
 st.table(df)
 
-st.markdown("The first group is based on the values of the attributes on the whole URL string, while the values of the following four groups are based on the particular sub-strings, as presented in Figure 1. The last group attributes are based on the URL resolve metrics as well as on the external services such as Google search index.")
+st.markdown('The first group is based on the values of the attributes on the whole URL string, while the values of the following four groups are based on the particular sub-strings, as presented in Figure 1. The last group attributes are based on the URL resolve metrics as well as on the external services such as Google search index.')
  
 
 @st.cache_resource
