@@ -3,6 +3,26 @@ import pickle
 import pandas as pd
 from extract_features import ExtractFeatures
 
+# Load the image
+image = Image.open('ineuron-logo1.png')
+st.image(image, width=150)
+
+st.write("<div align='left'><span style='color:#FF5A5F; font-size: 15px;'>Amsterdam</span></div>", unsafe_allow_html=True)
+
+st.markdown(
+    "<div style='display: flex; align-items: left;'>"
+    "<h1 style='color:#484848; margin-right: -40px'>Visualization with</h1>"
+    "<h1 style='color:#FF5A5F;'>NumPy 🗺️</h1>"
+    "</div>", 
+    unsafe_allow_html=True
+)
+
+image=Image.open('cybersec_orange.png')
+width=750
+height=500
+image_new=image.resize((width,height))
+st.image(image_new)
+
 @st.cache_resource
 def get_model():
     """
