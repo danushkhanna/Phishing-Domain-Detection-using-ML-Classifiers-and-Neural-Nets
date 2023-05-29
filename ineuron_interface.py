@@ -59,6 +59,7 @@ df = pd.DataFrame(data)
 # Display the table using st.table
 st.table(df)
 
+st.markdown("- attributes based on the domain properties presented in Table 2,")
    
 @st.cache_resource
 def get_model():
