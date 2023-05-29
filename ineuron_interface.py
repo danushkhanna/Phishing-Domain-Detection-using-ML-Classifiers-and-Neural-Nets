@@ -4,7 +4,7 @@ import pandas as pd
 from extract_features import ExtractFeatures
 
 # Load the image
-image = Image.open('ineuron-logo1.png')
+image = image.open('ineuron-logo1.png')
 st.image(image, width=150)
 
 st.write("<div align='left'><span style='color:#FF5A5F; font-size: 15px;'>Amsterdam</span></div>", unsafe_allow_html=True)
@@ -17,7 +17,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-image=Image.open('cybersec_orange.png')
+image=image.open('cybersec_orange.png')
 width=750
 height=500
 image_new=image.resize((width,height))
