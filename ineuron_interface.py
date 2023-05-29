@@ -10,14 +10,14 @@ st.image(image, width=150)
 
 st.markdown(
     "<div style='display: flex; align-items: left;'>"
-    "<h1 style='color:#003E7F; margin-center: 10px;'>Unmasking Phishing Websites:</h1>"
+    "<h1 style='color:#003E7F; margin-right: 10px;'>Unmasking Phishing Websites:</h1>"
     "</div>",
     unsafe_allow_html=True
 )
 
 st.markdown(
     "<div style='display: flex; align-items: left;'>"
-    "<h1 style='color:orange;'> A Machine Learning Approach</h1>"
+    "<h1 style='color:orange; margin-left: 10px;'>A Machine Learning Approach</h1>"
     "</div>",
     unsafe_allow_html=True
 )
