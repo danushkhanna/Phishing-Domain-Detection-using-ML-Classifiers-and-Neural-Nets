@@ -32,7 +32,34 @@ st.markdown("- These data consist of a collection of legitimate, as well as phis
 st.markdown("- Machine learning and data mining researchers can benefit from these datasets, while also computer security researchers and practitioners. Computer security enthusiasts can find these datasets interesting for building firewalls, intelligent ad blockers, and malware detection systems.")            
 st.markdown("- This dataset can help researchers and practitioners easily build classification models in systems preventing phishing attacks since the presented datasets feature the attributes which can be easily extracted.")
 st.markdown("- Finally, the provided datasets could also be used as a performance benchmark for developing state-of-the-art machine learning methods for the task of phishing websites classification.")
-    
+
+# Define the table data
+data = {
+    'Nr.': list(range(1, 21)),
+    'Attribute': [
+        'qty_dot_url', 'qty_hyphen_url', 'qty_underline_url', 'qty_slash_url', 'qty_questionmark_url',
+        'qty_equal_url', 'qty_at_url', 'qty_and_url', 'qty_exclamation_url', 'qty_space_url',
+        'qty_tilde_url', 'qty_comma_url', 'qty_plus_url', 'qty_asterisk_url', 'qty_hashtag_url',
+        'qty_dollar_url', 'qty_percent_url', 'qty_tld_url', 'length_url', 'email_in_url'
+    ],
+    'Format': [
+        'Number of "." signs', 'Number of "-" signs', 'Number of "_" signs', 'Number of "/" signs',
+        'Number of "?" signs', 'Number of "=" signs', 'Number of "@" signs', 'Number of "&" signs',
+        'Number of "!" signs', 'Number of " " signs', 'Number of "~" signs', 'Number of "," signs',
+        'Number of "+" signs', 'Number of "*" signs', 'Number of "#" signs', 'Number of "$" signs',
+        'Number of "%" signs', 'Top level domain character length', 'Number of characters', 'Is email present'
+    ],
+    'Description': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+    'Values': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '[0, 1]']
+}
+
+# Create a DataFrame from the data
+df = pd.DataFrame(data)
+
+# Display the table using st.table
+st.table(df)
+
+   
 @st.cache_resource
 def get_model():
     """
