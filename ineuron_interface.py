@@ -24,7 +24,7 @@ width=750
 height=500
 image_new=image.resize((width,height))
 st.image(image_new)
-st.markdown("#*Abstract*")
+st.markdown("# *Abstract*")
 st.markdown("Phishing stands for a fraudulent process, where an attacker tries to obtain sensitive information from the victim. Usually, these kinds of attacks are done via emails, text messages, or websites. Phishing websites, which are nowadays in a considerable rise, have the same look as legitimate sites. However, their backend is designed to collect sensitive information that is inputted by the victim. Discovering and detecting phishing websites has recently also gained the machine learning community’s attention, which has built the models and performed classifications of phishing websites.")
 
 @st.cache_resource
