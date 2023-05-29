@@ -5,7 +5,7 @@ from extract_features import ExtractFeatures
 from PIL import Image
 
 # Load the image
-image = Image.open('ineuron-logo1.png')
+image = Image.open('ineuron3.png')
 st.image(image, width=150)
 
 st.title("Phishing Website Detector")
