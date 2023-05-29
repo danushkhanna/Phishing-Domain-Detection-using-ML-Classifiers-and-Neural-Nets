@@ -8,9 +8,6 @@ from PIL import Image
 image = Image.open('ineuron-logo1.png')
 st.image(image, width=150)
 
-st.title("Unmasking Phishing Websites with")
-st.markdown("<span style='color: orange;'>Machine Learning</span>", unsafe_allow_html=True)
-
 st.markdown(
     "<div style='display: flex; align-items: left;'>"
     "<h1 style='color:#003E7F; margin-right: -40px;'>Unmasking Phishing Websites with</h1>"
