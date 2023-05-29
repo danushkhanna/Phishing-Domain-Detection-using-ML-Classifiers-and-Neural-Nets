@@ -8,15 +8,11 @@ from PIL import Image
 image = Image.open('ineuron-logo1.png')
 st.image(image, width=150)
 
-st.markdown(
-    "<div style='display: flex; align-items: left;'>"
-    "<h1 style='color:#003E7F; margin-right: 10px;'>Unmasking Phishing Websites:</h1>"
-    "</div>",
-    unsafe_allow_html=True
-)
+import streamlit as st
 
 st.markdown(
-    "<div style='display: flex; align-items: left;'>"
+    "<div style='display: flex; align-items: center; margin-bottom: -10px;'>"
+    "<h1 style='color:#003E7F; margin-right: 10px;'>Unmasking Phishing Websites:</h1>"
     "<h1 style='color:orange; margin-left: 10px;'>A Machine Learning Approach</h1>"
     "</div>",
     unsafe_allow_html=True
