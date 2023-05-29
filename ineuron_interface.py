@@ -9,9 +9,10 @@ image = Image.open('ineuron-logo1.png')
 st.image(image, width=150)
 
 st.markdown(
-    "<div style='display: flex; align-items: left;'>"
-    "<h1 style='color:#003E7F; margin-right: -40px;'>Unmasking Phishing Websites with</h1>""<h1 style='color:orange;'>Machine Learning</h1>"
-    "</div>", 
+    "<div style='display: flex; align-items: center;'>"
+    "<h1 style='color:#003E7F; margin-right: 10px;'>Unmasking Phishing Websites with</h1>"
+    "<h1 style='color:orange;'>Machine Learning</h1>"
+    "</div>",
     unsafe_allow_html=True
 )
 
