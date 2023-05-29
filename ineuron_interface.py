@@ -10,7 +10,7 @@ st.image(image, width=150)
 
 st.title("Phishing Website Detector")
 
-image=Image.open('cybersec_orange.png')
+image=Image.open('cybersecpic.jpeg')
 width=750
 height=500
 image_new=image.resize((width,height))
