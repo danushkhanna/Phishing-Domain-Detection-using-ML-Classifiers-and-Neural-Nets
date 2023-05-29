@@ -86,9 +86,6 @@ data = {
 # Create a DataFrame from the data
 df = pd.DataFrame(data)
 
-# Display the table name
-st.write(f'## {table_name}')
-
 # Display the table using st.table
 st.table(df)
    
