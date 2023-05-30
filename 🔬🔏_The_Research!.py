@@ -242,7 +242,7 @@ st.markdown("The complete process of extracting the features from the list of co
 
 image=Image.open('pic3.jpg')
 st.image(image, width=500)
-st.markdown("#### Algorithm 1. Feature extraction process")
+st.markdown("##### Algorithm 1. Feature extraction process")
 
 st.markdown("### *Declaration of Competing Interest*")
 st.markdown("The authors declare that they have no known competing financial interests or personal relationships which have, or could be perceived to have, influenced the work reported in this article.")
