@@ -54,6 +54,10 @@ st.markdown("- Machine learning and data mining researchers can benefit from the
 st.markdown("- This dataset can help researchers and practitioners easily build classification models in systems preventing phishing attacks since the presented datasets feature the attributes which can be easily extracted.")
 st.markdown("- Finally, the provided datasets could also be used as a performance benchmark for developing state-of-the-art machine learning methods for the task of phishing websites classification.")
 
+st.markdown("### 1. Data Description")
+st.markdown("The presented dataset was collected and prepared for the purpose of building and evaluating various classification methods for the task of detecting phishing websites based on the uniform resource locator (URL) properties, URL resolving metrics, and external services. The attributes of the prepared dataset can be divided into six groups:")
+st.markdown("- attributes based on the whole URL properties presented in Table 1,")
+
 # Define the table data
 st.markdown('#### Table 1. Dataset attributes based on URL.')
 data = {
