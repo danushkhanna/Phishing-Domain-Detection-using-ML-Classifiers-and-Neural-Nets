@@ -6,7 +6,7 @@ from PIL import Image
 
 # Load the image
 image = Image.open('ineuron-logo1.png')
-st.sidebar.image(image, width=150)
+st.image(image, width=150)
 
 import streamlit as st
 
@@ -23,5 +23,4 @@ image=Image.open('phising1.jpeg')
 width=750
 height=500
 image_new=image.resize((width,height))
-st.image(image_new)
-
+st.sidebar.image(image_new)
