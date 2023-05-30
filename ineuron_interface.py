@@ -225,10 +225,12 @@ st.table(df)
 st.markdown('The first group is based on the values of the attributes on the whole URL string, while the values of the following four groups are based on the particular sub-strings, as presented in Figure 1. The last group attributes are based on the URL resolve metrics as well as on the external services such as Google search index.')
 
 image=Image.open('pic1.jpg')
+st.image(image, width=150)
 st.markdown("#### Fig. 1. Separation of the whole URL string into sub-strings.")
 st.markdown("The dataset in total features 111 attributes excluding the target phishing attribute, which denotes whether the particular instance is legitimate (value 0) or phishing (value 1). We prepared two variations of the dataset, the one where the total number of instances is 58,645 and the balance between the target classes in more or less balanced with 30,647 instances labeled as phishing websites and 27,998 instances labeled as legitimate. The second variant of the dataset is comprised of 88,647 instances with 30,647 instances labeled as phishing and 58,000 instances labeled as legitimate, the purpose of which is to mimic the real-world situation where there are more legitimate websites present. The distribution between the classes of both dataset variants is presented in Figure 2.")
 
 image=Image.open('pic2.jpg')
+st.image(image, width=150)
 st.markdown("Fig. 2. The distribution between classes for both dataset variations. The dataset_full denotes the larger dataset, while the dataset_small denotes the smaller dataset variation. The target class 0 denotes legitimate websites while the target class 1 denotes the phishing websites.")
 
 st.markdown("### *2. Experimental Design, Materials and Methods*")
@@ -239,6 +241,7 @@ st.markdown("The complete process of extracting the features from the list of co
 
 
 image=Image.open('pic3.jpg')
+st.image(image, width=150)
 st.markdown("#### Algorithm 1. Feature extraction process")
 
 st.markdown("### *Declaration of Competing Interest*")
