@@ -12,9 +12,9 @@ import streamlit as st
 
 st.markdown(
     "<div style='display: flex; align-items: center; margin-bottom: -35px;'>"
-    "<h1 style='color:#003E7F; margin-right: 10px;'> Let's Go</h1>"
+    "<h1 style='color:#003E7F; margin-center: 10px;'> Let's Go</h1>"
     "</div>"
-    "<h1 style='color:orange; margin-left: 10px;'>Phishing!</h1>"
+    "<h1 style='color:orange; margin-center: 10px;'>Phishing!</h1>"
     "</div>",
     unsafe_allow_html=True
 )
