@@ -199,7 +199,7 @@ st.markdown('- attributes based on the URL resolving data and external metrics p
 st.markdown('#### Table 6. Dataset attributes based on resolving URL and external services.')
 
 data = {
-    'Nr.': list(range(1, 17)),
+    'Nr.': list(range(1, 15)),
     'Attribute': [
         'time_response', 'domain_spf', 'asn_ip', 'time_domain_activation', 'time_domain_expiration',
         'qty_ip_resolved', 'qty_nameservers', 'qty_mx_servers', 'ttl_hostname', 'tls_ssl_certificate',
