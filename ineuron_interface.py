@@ -27,20 +27,19 @@ st.image(image_new)
 
 st.markdown("### *Specifications Table*")
 data = {
-    'Subject': ['Computer Science'],
-    'Specific subject area': ['Artificial Intelligence'],
-    'Type of data': ['csv file'],
-    'How data were acquired': ['Data were acquired through the publicly available lists of phishing and legitimate websites, from which the features presented in the datasets were extracted.'],
-    'Data format': ['Raw: csv file'],
-    'Parameters for data collection': ['For the phishing websites, only the ones from the PhishTank registry were included, which are verified from multiple users. For the legitimate websites, we included the websites from publicly available, community labeled and organized lists [1], and from the Alexa top ranking websites.'],
-    'Description of data collection': ['The data is comprised of the features extracted from the collections of websites addresses. The data in total consists of 111 features, 96 of which are extracted from the website address itself, while the remaining 15 features were extracted using custom Python code.'],
-    'Data source location': ['Worldwide'],
-    'Data accessibility': [
-        'Repository name: Mendeley Data',
-        'Data identification number: 10.17632/72ptz43s9v.1',
-        'Direct URL to data: [https://doi.org/10.17632/72ptz43s9v.1](https://doi.org/10.17632/72ptz43s9v.1)'
+    'Attribute': [
+        'Subject', 'Specific subject area', 'Type of data', 'How data were acquired', 'Data format',
+        'Parameters for data collection', 'Description of data collection', 'Data source location',
+        'Data accessibility', 'Related research article'
     ],
-    'Related research article': [
+    'Value': [
+        'Computer Science', 'Artificial Intelligence', 'csv file',
+        'Data were acquired through the publicly available lists of phishing and legitimate websites, from which the features presented in the datasets were extracted.',
+        'Raw: csv file',
+        'For the phishing websites, only the ones from the PhishTank registry were included, which are verified from multiple users. For the legitimate websites, we included the websites from publicly available, community labeled and organized lists [1], and from the Alexa top ranking websites.',
+        'The data is comprised of the features extracted from the collections of websites addresses. The data in total consists of 111 features, 96 of which are extracted from the website address itself, while the remaining 15 features were extracted using custom Python code.',
+        'Worldwide',
+        'Repository name: Mendeley Data\nData identification number: 10.17632/72ptz43s9v.1\nDirect URL to data: [https://doi.org/10.17632/72ptz43s9v.1](https://doi.org/10.17632/72ptz43s9v.1)',
         'Vrbančič, Grega, Iztok Fister Jr, and Vili Podgorelec. “Parameter setting for deep neural networks using swarm intelligence on phishing websites classification.” International Journal on Artificial Intelligence Tools 28.06 (2019): 1960008. DOI:10.1142/S021821301960008X'
     ]
 }
