@@ -37,9 +37,6 @@ st.markdown(
     f'</div>',
     unsafe_allow_html=True
 )
-Make sure to replace 'phishing1.jpeg' with the correct file name and ensure that the image file is located in the same directory as your Streamlit script.
-
-This code converts the image to a base64 encoded string and
 
 
 
