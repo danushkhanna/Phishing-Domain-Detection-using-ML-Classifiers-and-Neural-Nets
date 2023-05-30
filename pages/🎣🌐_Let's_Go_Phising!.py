@@ -20,15 +20,27 @@ st.markdown(
 )
 
 image=Image.open('phising1.jpeg')
-max_width = 800
+image_bytes = image.tobytes()
+image_base64 = base64.b64encode(image_bytes).decode('utf-8')
 
+# Calculate image dimensions
+max_width = 800
 width, height = image.size
 aspect_ratio = width / height
 image_width = min(max_width, width)
 image_height = int(image_width / aspect_ratio)
+
+# Display the image with scrollable window effect
 st.markdown(
     f'<div style="overflow:auto; max-height: {image_height}px;">'
-    f'<img src="data:image/jpeg;base64,{image}" style="width: {image_width}px">'
+    f'<img src="data:image/jpeg;base64,{image_base64}" style="width: {image_width}px">'
     f'</div>',
     unsafe_allow_html=True
 )
+Make sure to replace 'phishing1.jpeg' with the correct file name and ensure that the image file is located in the same directory as your Streamlit script.
+
+This code converts the image to a base64 encoded string and
+
+
+
+
