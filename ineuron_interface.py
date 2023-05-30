@@ -197,6 +197,7 @@ st.table(df)
 # TABLE 6
 st.markdown('- attributes based on the URL resolving data and external metrics presented in Table 6.')
 st.markdown('#### Table 6. Dataset attributes based on resolving URL and external services.')
+
 data = {
     'Nr.': list(range(1, 17)),
     'Attribute': [
@@ -219,6 +220,7 @@ data = {
         '', '[0, 1]', '', '', '', '', '', '', '', '[0, 1]', '', '[0, 1]', '[0, 1]', '[0, 1]'
     ]
 }
+
 df = pd.DataFrame(data)
 st.table(df)
 
@@ -250,9 +252,6 @@ st.markdown("Authors acknowledge the financial support from the Slovenian Resear
 st.markdown("### *Reference*")
 
 st.write("""This research is based on this paper [here](https://www.sciencedirect.com/science/article/pii/S2352340920313202#fig0001)""")
-
-
-
 
 @st.cache_resource
 def get_model():
