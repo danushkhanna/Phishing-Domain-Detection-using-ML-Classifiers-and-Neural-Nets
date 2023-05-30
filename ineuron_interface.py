@@ -212,8 +212,13 @@ data = {
         'Is URL indexed on Google', 'Is domain indexed on Google', 'Is URL shortened',
         'Is phishing website'
     ],
-    'Description': ['Numeric', 'Boolean', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Boolean', 'Numeric', 'Boolean', 'Boolean', 'Boolean', 'Boolean'],
-    'Values': ['', '[0, 1]', '', '', '', '', '', '', '', '[0, 1]', '', '[0, 1]', '[0, 1]', '', '[0, 1]']
+    'Description': [
+        'Numeric', 'Boolean', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric',
+        'Numeric', 'Boolean', 'Numeric', 'Boolean', 'Boolean', 'Boolean', 'Boolean', 'Boolean'
+    ],
+    'Values': [
+        '', '[0, 1]', '', '', '', '', '', '', '', '[0, 1]', '', '[0, 1]', '[0, 1]', '', '[0, 1]'
+    ]
 }
 df = pd.DataFrame(data)
 st.table(df)
