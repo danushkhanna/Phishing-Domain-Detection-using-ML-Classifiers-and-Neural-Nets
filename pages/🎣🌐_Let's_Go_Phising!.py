@@ -25,8 +25,6 @@ height=700
 image_new=image.resize((width,height))
 st.image(image_new)
 
-st.markdown("Type in that link that your 'bank' sent you XD!")
-
 @st.cache_resource
 def get_model():
     """
