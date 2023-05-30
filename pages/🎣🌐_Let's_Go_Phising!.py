@@ -21,7 +21,7 @@ st.markdown(
 
 image=Image.open('phising1.jpeg')
 width=750
-height=600
+height=700
 image_new=image.resize((width,height))
 st.image(image_new)
 
