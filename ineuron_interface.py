@@ -214,10 +214,10 @@ data = {
     ],
     'Description': [
         'Numeric', 'Boolean', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric', 'Numeric',
-        'Numeric', 'Boolean', 'Numeric', 'Boolean', 'Boolean', 'Boolean', 'Boolean', 'Boolean'
+        'Numeric', 'Boolean', 'Numeric', 'Boolean', 'Boolean', 'Boolean', 'Boolean'
     ],
     'Values': [
-        '', '[0, 1]', '', '', '', '', '', '', '', '[0, 1]', '', '[0, 1]', '[0, 1]', '', '[0, 1]'
+        '', '[0, 1]', '', '', '', '', '', '', '', '[0, 1]', '', '[0, 1]', '[0, 1]', '', '[0, 1]', ''
     ]
 }
 df = pd.DataFrame(data)
