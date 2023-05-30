@@ -241,7 +241,7 @@ st.markdown("The complete process of extracting the features from the list of co
 
 
 image=Image.open('pic3.jpg')
-st.image(image, width=150)
+st.image(image, width=500)
 st.markdown("#### Algorithm 1. Feature extraction process")
 
 st.markdown("### *Declaration of Competing Interest*")
