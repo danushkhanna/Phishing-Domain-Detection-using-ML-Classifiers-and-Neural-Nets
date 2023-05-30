@@ -21,6 +21,6 @@ st.markdown(
 
 image=Image.open('phising1.jpeg')
 width=750
-height=500
+height=600
 image_new=image.resize((width,height))
-st.sidebar.image(image_new)
+st.image(image_new)
