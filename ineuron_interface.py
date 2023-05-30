@@ -245,7 +245,7 @@ st.markdown("Authors acknowledge the financial support from the Slovenian Resear
 
 st.markdown("### *Reference*")
 
-This app is based on this paper [here](https://www.sciencedirect.com/science/article/pii/S2352340920313202#fig0001)
+st.write("""This research is based on this paper [here](https://www.sciencedirect.com/science/article/pii/S2352340920313202#fig0001)""")
 
 
 
