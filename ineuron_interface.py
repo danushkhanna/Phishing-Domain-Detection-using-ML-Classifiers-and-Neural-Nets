@@ -197,7 +197,6 @@ st.table(df)
 # TABLE 6
 st.markdown('- attributes based on the URL resolving data and external metrics presented in Table 6.')
 st.markdown('#### Table 6. Dataset attributes based on resolving URL and external services.')
-
 data = {
     'Nr.': list(range(1, 17)),
     'Attribute': [
@@ -217,7 +216,7 @@ data = {
         'Numeric', 'Boolean', 'Numeric', 'Boolean', 'Boolean', 'Boolean', 'Boolean'
     ],
     'Values': [
-        '', '[0, 1]', '', '', '', '', '', '', '', '[0, 1]', '', '[0, 1]', '[0, 1]', '', '[0, 1]', ''
+        '', '[0, 1]', '', '', '', '', '', '', '', '[0, 1]', '', '[0, 1]', '[0, 1]', '[0, 1]'
     ]
 }
 df = pd.DataFrame(data)
