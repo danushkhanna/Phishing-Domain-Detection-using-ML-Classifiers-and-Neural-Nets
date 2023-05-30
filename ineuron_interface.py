@@ -25,6 +25,28 @@ height=500
 image_new=image.resize((width,height))
 st.image(image_new)
 
+st.markdown("### *Specifications Table*")
+data = {
+    'Subject': ['Computer Science'],
+    'Specific subject area': ['Artificial Intelligence'],
+    'Type of data': ['csv file'],
+    'How data were acquired': ['Data were acquired through the publicly available lists of phishing and legitimate websites, from which the features presented in the datasets were extracted.'],
+    'Data format': ['Raw: csv file'],
+    'Parameters for data collection': ['For the phishing websites, only the ones from the PhishTank registry were included, which are verified from multiple users. For the legitimate websites, we included the websites from publicly available, community labeled and organized lists [1], and from the Alexa top ranking websites.'],
+    'Description of data collection': ['The data is comprised of the features extracted from the collections of websites addresses. The data in total consists of 111 features, 96 of which are extracted from the website address itself, while the remaining 15 features were extracted using custom Python code.'],
+    'Data source location': ['Worldwide'],
+    'Data accessibility': [
+        'Repository name: Mendeley Data',
+        'Data identification number: 10.17632/72ptz43s9v.1',
+        'Direct URL to data: [https://doi.org/10.17632/72ptz43s9v.1](https://doi.org/10.17632/72ptz43s9v.1)'
+    ],
+    'Related research article': [
+        'Vrbančič, Grega, Iztok Fister Jr, and Vili Podgorelec. “Parameter setting for deep neural networks using swarm intelligence on phishing websites classification.” International Journal on Artificial Intelligence Tools 28.06 (2019): 1960008. DOI:10.1142/S021821301960008X'
+    ]
+}
+df = pd.DataFrame(data)
+st.table(df)
+
 st.markdown("### *Abstract*")
 st.markdown("Phishing stands for a fraudulent process, where an attacker tries to obtain sensitive information from the victim. Usually, these kinds of attacks are done via emails, text messages, or websites. Phishing websites, which are nowadays in a considerable rise, have the same look as legitimate sites. However, their backend is designed to collect sensitive information that is inputted by the victim. Discovering and detecting phishing websites has recently also gained the machine learning community’s attention, which has built the models and performed classifications of phishing websites. This paper presents two dataset variations that consist of 58,645 and 88,647 websites labeled as legitimate or phishing and allow the researchers to train their classification models, build phishing detection systems, and mining association rules.")
 st.markdown("### *Value of the Data*")
