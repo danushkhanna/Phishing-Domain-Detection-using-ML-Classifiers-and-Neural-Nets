@@ -19,7 +19,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-image=Image.open('phishing1.jpeg')
+image=Image.open('phising1.jpeg')
 width=750
 height=500
 image_new=image.resize((width,height))
