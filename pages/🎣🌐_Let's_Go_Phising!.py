@@ -20,24 +20,10 @@ st.markdown(
 )
 
 image=Image.open('phising1.jpeg')
-image_bytes = image.tobytes()
-image_base64 = base64.b64encode(image_bytes).decode('utf-8')
-
-# Calculate image dimensions
-max_width = 800
-width, height = image.size
-aspect_ratio = width / height
-image_width = min(max_width, width)
-image_height = int(image_width / aspect_ratio)
-
-# Display the image with scrollable window effect
-st.markdown(
-    f'<div style="overflow:auto; max-height: {image_height}px;">'
-    f'<img src="data:image/jpeg;base64,{image_base64}" style="width: {image_width}px">'
-    f'</div>',
-    unsafe_allow_html=True
-)
-
+width=750
+height=600
+image_new=image.resize((width,height))
+st.image(image_new)
 
 
 
